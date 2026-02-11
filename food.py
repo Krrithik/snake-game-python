@@ -1,5 +1,6 @@
-from turtle import Turtle
 import random
+from turtle import Turtle
+
 
 class Food(Turtle):
     def __init__(self):
@@ -9,9 +10,7 @@ class Food(Turtle):
         self.shapesize(0.5, 0.5)
         self.color("red")
         self.speed("fastest")
-        random_x = random.randint(-280,280)
-        random_y = random.randint(-280,280)
-        self.goto(random_x,random_y)
+        self.change_pos()
 
     def change_pos(self):
         random_x = random.randint(-280,280)
